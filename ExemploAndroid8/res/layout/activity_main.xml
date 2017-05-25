@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1" >
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:gravity="left"
+                android:padding="3dip"
+                android:text="CPF: "
+                android:textStyle="normal|bold" >
+            </TextView>
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/txtCpf"
+                android:layout_span="2"
+                android:ems="10"
+                android:gravity="left"
+                android:maxLength="14"
+                android:padding="5dip"
+                android:width="25dp" >
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:padding="3dip"
+                android:gravity="left"
+                android:textStyle="normal|bold"
+                android:text="Nome:"
+                 />
+        </TableRow>
+
+        <TableRow>
+            <EditText
+                android:id="@+id/txtNome"
+                android:padding="5dip"
+                android:gravity="left"
+                android:layout_span="2"
+                android:ems="10" />
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:padding="3dip"
+                android:gravity="left"
+                android:textStyle="normal|bold"
+                android:text="Idade:" />
+        </TableRow>
+
+        <TableRow >
+
+            <EditText
+                android:id="@+id/txtIdade"
+                android:padding="5dip"
+                android:gravity="left"
+                android:ems="10" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2" />
+
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selecione seus filmes de interesse:"
+                android:textAppearance="?android:attr/textAppearanceLarge" 
+                android:textSize="20sp"
+                android:layout_span="2"/>
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/chkSenhor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Senhor dos Anéis" />
+        </TableRow>
+
+        <TableRow >
+
+            <CheckBox
+                android:id="@+id/chkGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Game of Thrones" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/chkStar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Star Wars" />
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_span="2"/>
+
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selecione seu sexo:" 
+                android:textAppearance="?android:attr/textAppearanceLarge" 
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            >
+
+            <RadioButton
+                android:id="@+id/radioM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Masculino" />
+
+            <RadioButton
+                android:id="@+id/radioF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feminino" />
+
+        </RadioGroup>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mostrar em outra tela"
+                android:textSize="15px" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
